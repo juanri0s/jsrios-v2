@@ -1,0 +1,582 @@
+/*==================================
+  COLORS 
+  Generated with help from coolors
+  https://coolors.co/
+====================================*/
+
+html,
+body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*============ 
+  TYPOGRAPHY 
+==============*/
+
+h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    color: #000000;
+    font-size: 18px;
+}
+
+h3 {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 3em;
+}
+
+h4,
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #000000;
+}
+
+@media all and (max-width: 1000px) {
+    p {
+        text-align: left;
+        margin-bottom: 1.5em;
+    }
+}
+
+
+/*========
+  LISTS
+==========*/
+
+ul {
+    color: #000000;
+    list-style: none;
+    margin-left: 0;
+}
+
+ul li {
+    padding-bottom: 10px;
+}
+
+
+/*==========================================
+  https://codepen.io/mattbeaudry/pen/faKvy
+============================================*/
+
+a {
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a:after {
+    background: rgba(30, 215, 96, .2);
+}
+
+a.underline {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a.underline:hover,
+a.underline:active,
+a.underline:focus,
+a.underline:visited {
+    font-weight: 300;
+}
+
+a.underline::before {
+    content: " ";
+    border-bottom: solid 3px #1B9AB6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    width: 0%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a.underline:hover::before,
+a.underline:active::before,
+a.underline:focus::before,
+a.underline:visited::before {
+    border-bottom: solid 3px #1B9AB6;
+    left: 0%;
+    width: 100%;
+}
+
+a.underline.underline::before {
+    left: 0%;
+}
+
+.underline-active {
+    font-weight: 300;
+    color: #FFFCF2;
+    background: #1B9AB6;
+}
+
+.vertical-distance {
+    margin-top: 3em;
+}
+
+
+/*======================================================
+  GRID
+  Based on code by Jan Drewniak 
+  http://j4n.co/blog/Creating-your-own-css-grid-system
+========================================================*/
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    width: 100%;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+    /* Gutter */
+    padding-right: 60px;
+}
+
+.col-1 {
+    width: 16.66%;
+}
+
+.col-2 {
+    width: 33.33%;
+}
+
+.col-3 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 66.66%;
+}
+
+.col-5 {
+    width: 83.33%;
+}
+
+.col-6 {
+    width: 100%;
+}
+
+@media all and (max-width: 1000px) {
+    [class*='col-'] {
+        padding-right: 0;
+    }
+    .col-1 {
+        width: 33.33%;
+    }
+    .col-2 {
+        width: 50%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .row .col-2:last-of-type {
+        width: 100%;
+    }
+    .row .col-5~.col-1 {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+}
+
+
+/*============ 
+  TYPOGRAPHY 
+==============*/
+
+.section-main {
+    color: #FFFCF2;
+}
+
+.section-main h1 {
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.section-main h2 {
+    font-size: 60px;
+    line-height: 80px;
+}
+
+h1.section-heading {
+    color: #000000;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 1em;
+}
+
+h2.sub-heading {
+    color: #000000;
+    font-size: 35px;
+}
+
+h2.skills-heading {
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+@media all and (max-width: 500px) {
+    .section-main h1 {
+        font-size: 4.8em;
+    }
+    .section-main h2 {
+        font-size: 2.9em;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .section-main h1 {
+        font-size: 3.8em;
+    }
+    .section-main h2 {
+        font-size: 2.3em;
+        line-height: 60px;
+    }
+}
+
+section.fullscreen {
+    padding: 3.6em 0;
+    width: 100%;
+}
+
+.max-height {
+    min-height: 100vh;
+}
+
+section.fullscreen.section-main {
+    background: #FFFFFF;
+    color: #00BFA5;
+    padding-top: 3.6em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+h3.about {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+/*========
+  LISTS
+==========*/
+
+ul.press-list li,
+ul.events-list li {
+    color: #000000;
+    font-size: 25px;
+}
+
+ul.press-list li span,
+ul.events-list li span {
+    color: #213347;
+    font-size: 18px;
+}
+
+ul.events-list {
+    margin-bottom: 1.5em;
+}
+
+ul.skills-list {
+    list-style: circle;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 1.3em;
+}
+
+ul.skills-list li:last-child {
+    padding-bottom: 1.5em;
+}
+
+ul.social-list li {
+    margin-bottom: 0.75em;
+}
+
+
+/*========================================
+  FOOTER
+==========================================*/
+
+section.fullscreen-bottom {
+    min-height: 90vh;
+}
+
+footer {
+    background: #E9F0F6;
+    position: relative;
+    padding: .5em 0;
+    min-height: 10vh;
+    text-align: center;
+}
+
+.social-list p {
+    font-size: 12px;
+}
+
+div.social-list ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+div.social-list ul li {
+    display: inline-block;
+    height: 56px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 13px 15px;
+}
+
+@media all and (max-width: 1115px) {
+    footer .col-3 {
+        width: 100%;
+        padding-right: 0;
+    }
+    div.social-list {
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+    div.copyright-list p {
+        text-align: center;
+        margin-bottom: 0.75em;
+    }
+}
+
+@media all and (max-width: 400px) {
+    div.social-list ul li {
+        border: 0;
+        padding: 0;
+        width: 40px;
+    }
+}
+
+
+/*button media  */
+
+@media all and (max-width: 680px) {
+    button.main-btn,
+    button.contact-btn {
+        font-size: .9em;
+        letter-spacing: 1px;
+        border-width: 4px;
+        padding: 25px 15px;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+button.contact-btn {
+    margin-bottom: 3em;
+}
+
+@media all and (max-width: 500px) {
+    button.main-btn {
+        font-size: .8em;
+        border-width: 3px;
+    }
+    button.contact-btn {
+        font-size: .9em;
+        text-align: left;
+        border: none;
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 400px) {
+    button.main-btn {
+        font-size: .6em;
+        border-width: 2px;
+        line-height: 15px;
+    }
+    button.contact-btn {
+        font-size: .8em;
+    }
+}
+
+
+/*================
+  HELPER CLASSES
+==================*/
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-light {
+    background: #EAF5F8;
+}
+
+.bg-alternate {
+    background: #FFFFFF;
+}
+
+
+/* https://codepen.io/ahmedbeheiry/pen/aBdezY Button 4 */
+
+.custom-btn {
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-4 {
+    width: 200px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    border: none;
+}
+
+.btn-4 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-4:before,
+.btn-4:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgba(58, 71, 80, .76);
+    transition: all 0.3s ease;
+}
+
+.btn-4:before {
+    height: 50%;
+    width: 2px;
+}
+
+.btn-4:after {
+    width: 20%;
+    height: 2px;
+}
+
+.btn-4:hover:before {
+    height: 100%;
+}
+
+.btn-4:hover:after {
+    width: 100%;
+}
+
+.btn-4 span:before,
+.btn-4 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgba(58, 71, 80, .76);
+    transition: all 0.3s ease;
+}
+
+.btn-4 span:before {
+    width: 2px;
+    height: 50%;
+}
+
+.btn-4 span:after {
+    width: 20%;
+    height: 2px;
+}
+
+.btn-4 span:hover:before {
+    height: 100%;
+}
+
+.btn-4 span:hover:after {
+    width: 100%;
+}
+
+.work_heading {
+    display: table-cell;
+}
+
+#ups {
+    display: table;
+}
