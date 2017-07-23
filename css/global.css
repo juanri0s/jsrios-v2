@@ -1,9 +1,3 @@
-/*==================================
-  COLORS 
-  Generated with help from coolors
-  https://coolors.co/
-====================================*/
-
 html,
 body {
     margin: 0;
@@ -20,9 +14,7 @@ body {
 }
 
 
-/*============ 
-  TYPOGRAPHY 
-==============*/
+/* headings */
 
 body {
     color: #000000;
@@ -79,9 +71,7 @@ h5 {
 }
 
 
-/*============
-  NAVIGATION
-==============*/
+/* nav bar */
 
 .section-main {
     text-align: center;
@@ -111,9 +101,7 @@ nav a {
 }
 
 
-/*========
-  LISTS
-==========*/
+/* list */
 
 ul {
     color: #000000;
@@ -128,9 +116,11 @@ ul li {
 
 
 /*==========================================
-  LINKS
-  Based on code by Matt Beaudry
+  under line links based on http://www.misscarriemah.ca/ 
+  which is based on code by Matt Beaudry
   https://codepen.io/mattbeaudry/pen/faKvy
+
+  inline link underline based on http://ericls.com/
 ============================================*/
 
 a {
@@ -210,8 +200,9 @@ a.underline.underline::before {
 
 
 /*======================================================
-  http://j4n.co/blog/Creating-your-own-css-grid-system
-========================================================*/
+  Grid based on http://www.misscarriemah.ca/ grid for col-3 and col-6
+  which is based on code by Jan Drewniak 
+  http://j4n.co/blog/Creating-your-own-css-grid-system========================================================*/
 
 .container {
     margin-left: auto;
@@ -235,24 +226,8 @@ a.underline.underline::before {
     padding-right: 60px;
 }
 
-.col-1 {
-    width: 16.66%;
-}
-
-.col-2 {
-    width: 33.33%;
-}
-
 .col-3 {
     width: 50%;
-}
-
-.col-4 {
-    width: 66.66%;
-}
-
-.col-5 {
-    width: 83.33%;
 }
 
 .col-6 {
@@ -263,46 +238,16 @@ a.underline.underline::before {
     [class*='col-'] {
         padding-right: 0;
     }
-    .col-1 {
-        width: 33.33%;
-    }
-    .col-2 {
-        width: 50%;
-    }
     .col-3 {
-        width: 100%;
-    }
-    .col-4 {
-        width: 100%;
-    }
-    .col-5 {
         width: 100%;
     }
     .col-6 {
         width: 100%;
     }
-    .row .col-2:last-of-type {
-        width: 100%;
-    }
-    .row .col-5~.col-1 {
-        width: 100%;
-    }
 }
 
 @media all and (max-width: 650px) {
-    .col-1 {
-        width: 100%;
-    }
-    .col-2 {
-        width: 100%;
-    }
     .col-3 {
-        width: 100%;
-    }
-    .col-4 {
-        width: 100%;
-    }
-    .col-5 {
         width: 100%;
     }
     .col-6 {
@@ -317,6 +262,9 @@ nav {
     bottom: 0;
     padding-bottom: 40px;
 }
+
+
+/* Experience section formatting based on http://www.mich.li/ */
 
 .work-heading {
     display: table-cell;
