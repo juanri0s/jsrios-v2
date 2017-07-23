@@ -13,15 +13,21 @@ body {
     box-sizing: border-box;
 }
 
-h1,
-h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+
+/* Structure */
 
 body {
     color: #000000;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -31,6 +37,12 @@ h3 {
     line-height: 30px;
     margin-top: 0px;
     margin-bottom: 3em;
+}
+
+h3.subheading {
+    color: rgba(58, 71, 80, 1);
+    font-size: 20px;
+    line-height: 30px;
 }
 
 h4,
@@ -46,6 +58,14 @@ h4 {
     color: #000000;
 }
 
+h5 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 @media all and (max-width: 1000px) {
     p {
         text-align: left;
@@ -54,11 +74,42 @@ h4 {
 }
 
 
-/*==========================================
-  Underlining for navigation and social links
-  based on http://www.misscarriemah.ca/ which is based on
+/* nav bar */
+
+.section-main {
+    text-align: center;
+}
+
+.section-main h3 {
+    font-size: 23px;
+}
+
+nav#nav {
+    width: 100%;
+    padding-right: 30px;
+    text-align: center;
+}
+
+nav a {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 40px;
+}
+
+
+/*
+  under line links based on http://www.misscarriemah.ca/ 
+  which is based on code by Matt Beaudry
   https://codepen.io/mattbeaudry/pen/faKvy
-============================================*/
+
+  inline link underline based on http://ericls.com/ */
 
 a {
     color: #000000;
@@ -69,6 +120,30 @@ a {
 
 a:after {
     background: rgba(30, 215, 96, .2);
+}
+
+a.inline-link::after {
+    background: rgba(30, 215, 96, .20);
+    bottom: 1px;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    transition: 60ms;
+    width: 100%;
+    z-index: 10;
+}
+
+a.inline-link {
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+    transition: 80ms;
+}
+
+a.inline-link:hover,
+a.inline-link:focus {
+    font-weight: 300;
 }
 
 a.underline {
@@ -113,22 +188,11 @@ a.underline.underline::before {
     left: 0%;
 }
 
-.underline-active {
-    font-weight: 300;
-    color: #FFFCF2;
-    background: #1B9AB6;
-}
 
-.vertical-distance {
-    margin-top: 3em;
-}
-
-
-/*======================================================
+/* 
   Grid based on http://www.misscarriemah.ca/ grid for col-3 and col-6
   which is based on code by Jan Drewniak 
-  http://j4n.co/blog/Creating-your-own-css-grid-system
-========================================================*/
+  http://j4n.co/blog/Creating-your-own-css-grid-system */
 
 .container {
     margin-left: auto;
@@ -190,21 +254,11 @@ a.underline.underline::before {
     margin-bottom: 10px;
 }
 
-.section-main h2 {
-    font-size: 60px;
-    line-height: 80px;
-}
-
 h1.section-heading {
     color: #000000;
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 1em;
-}
-
-h2.sub-heading {
-    color: #000000;
-    font-size: 35px;
 }
 
 h2.skills-heading {
@@ -268,22 +322,6 @@ ul li {
     padding-bottom: 10px;
 }
 
-ul.press-list li,
-ul.events-list li {
-    color: #000000;
-    font-size: 25px;
-}
-
-ul.press-list li span,
-ul.events-list li span {
-    color: #213347;
-    font-size: 18px;
-}
-
-ul.events-list {
-    margin-bottom: 1.5em;
-}
-
 ul.skills-list {
     list-style: circle;
     font-size: 16px;
@@ -340,10 +378,6 @@ div.social-list ul li {
         text-align: center;
         margin-bottom: 1.5em;
     }
-    div.copyright-list p {
-        text-align: center;
-        margin-bottom: 0.75em;
-    }
 }
 
 @media all and (max-width: 400px) {
@@ -357,55 +391,11 @@ div.social-list ul li {
 
 /* Button media  */
 
-@media all and (max-width: 680px) {
-    button.main-btn,
-    button.contact-btn {
-        font-size: .9em;
-        letter-spacing: 1px;
-        border-width: 4px;
-        padding: 25px 15px;
-        margin: 0;
-        width: 100%;
-    }
-}
+@media all and (max-width: 680px) {}
 
-button.contact-btn {
-    margin-bottom: 3em;
-}
+@media all and (max-width: 500px) {}
 
-@media all and (max-width: 500px) {
-    button.main-btn {
-        font-size: .8em;
-        border-width: 3px;
-    }
-    button.contact-btn {
-        font-size: .9em;
-        text-align: left;
-        border: none;
-        padding: 0;
-    }
-}
-
-@media all and (max-width: 400px) {
-    button.main-btn {
-        font-size: .6em;
-        border-width: 2px;
-        line-height: 15px;
-    }
-    button.contact-btn {
-        font-size: .8em;
-    }
-}
-
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.bg-light {
-    background: #EAF5F8;
-}
+@media all and (max-width: 400px) {}
 
 .bg-alternate {
     background: #FFFFFF;
@@ -497,4 +487,39 @@ button.contact-btn {
 
 .btn-4 span:hover:after {
     width: 100%;
+}
+
+
+/* Experience section formatting based on http://www.mich.li/ */
+
+.work-heading {
+    display: table-cell;
+    width: 50vw;
+    color: #fff;
+    font-weight: 400;
+    max-width: 50vw;
+    min-width: 200px;
+    overflow: hidden;
+    padding: 0 20vw 0 20vw;
+    text-align: left;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+#ups {
+    display: table;
+    position: relative;
+    vertical-align: middle;
+}
+
+#research {
+    display: table;
+    position: relative;
+    vertical-align: middle;
+}
+
+#adamlouis {
+    display: table;
+    position: relative;
+    vertical-align: middle;
 }
