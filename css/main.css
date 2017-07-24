@@ -422,13 +422,6 @@ div.social-list ul li {
 }
 
 @media all and (max-width: 400px) {
-    div.social-list ul {
-        display: inline-table;
-        width: 40px;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
     p {
         text-align: center;
     }
