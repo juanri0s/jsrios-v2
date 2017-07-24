@@ -86,8 +86,10 @@ h5 {
 
 nav#nav {
     width: 100%;
-    padding-right: 30px;
     text-align: center;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin-bottom: 20px;
 }
 
 nav a {
@@ -101,6 +103,22 @@ nav {
     right: 0;
     bottom: 0;
     padding-bottom: 40px;
+}
+
+@media all and (max-width: 400px) {
+    nav#nav {
+        padding: 0;
+        margin: 0;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    nav {
+        padding-top: 100px;
+    }
+    nav a {
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+    }
 }
 
 
@@ -212,7 +230,6 @@ a.underline.underline::before {
     float: left;
     min-height: 1px;
     width: 16.66%;
-    /* Gutter */
     padding-right: 60px;
 }
 
@@ -309,6 +326,25 @@ h3.about {
     margin-right: 80px;
 }
 
+@media all and (max-width: 400px) {
+    .section-main h1 {
+        font-size: 90px;
+        margin-top: 0;
+    }
+    section.fullscreen.section-main {
+        padding-top: 20px;
+    }
+    h3.about {
+        font-size: 25px;
+        margin: 0;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+    h3 {
+        margin-bottom: 30px;
+    }
+}
+
 
 /* Lists  */
 
@@ -381,10 +417,13 @@ div.social-list ul li {
 }
 
 @media all and (max-width: 400px) {
-    div.social-list ul li {
-        border: 0;
-        padding: 0;
+    div.social-list ul {
+        display: inline-table;
         width: 40px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
     }
 }
 
@@ -395,7 +434,15 @@ div.social-list ul li {
 
 @media all and (max-width: 500px) {}
 
-@media all and (max-width: 400px) {}
+@media all and (max-width: 400px) {
+    button.custom-btn.btn-4 {
+        font-size: 23px;
+        width: 300px;
+        height: 60px;
+        line-height: 62px;
+        margin-bottom: 230px;
+    }
+}
 
 .bg-alternate {
     background: #FFFFFF;
