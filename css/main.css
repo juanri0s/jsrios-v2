@@ -113,11 +113,15 @@ nav {
         margin-bottom: 20px;
     }
     nav {
-        padding-top: 100px;
+        /* padding-top: 100px; */
+        display: none;
     }
     nav a {
         border-bottom: 1px solid black;
         padding-bottom: 10px;
+    }
+    .section-main h3 {
+        font-size: 15px;
     }
 }
 
@@ -335,13 +339,14 @@ h3.about {
         padding-top: 20px;
     }
     h3.about {
-        font-size: 23px;
+        /* font-size: 23px;
         margin: 0;
         line-height: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 30px; */
+        display: none;
     }
     h3 {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }
 
@@ -519,11 +524,26 @@ div.social-list ul li {
 
 @media all and (max-width: 400px) {
     button.custom-btn.btn-4 {
-        font-size: 23px;
+        /* font-size: 23px;
         height: 60px;
         right: 0;
         line-height: 62px;
-        margin-bottom: 200px;
+        margin-bottom: 200px; */
+        height: 70px;
+        margin-bottom: 0;
+    }
+    .btn-4 a {
+        color: #82B1FF
+    }
+    .btn-4:before {
+        background: #82B1FF;
+    }
+    .btn-4:after {
+        background: #82B1FF;
+    }
+    .btn-4 span:before,
+    .btn-4 span:after {
+        background: #82B1FF;
     }
 }
 
