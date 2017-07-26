@@ -134,10 +134,18 @@ nav {
   inline link underline based on http://ericls.com/ */
 
 a {
-    color: #000000;
+    color: #D81B60;
     text-decoration: none;
     display: inline-block;
     position: relative;
+}
+
+button.custom-btn.btn-4 a {
+    color: #000000;
+}
+
+nav#nav a {
+    font-weight: 500;
 }
 
 a:after {
@@ -447,12 +455,13 @@ div.social-list ul li {
 
 .btn-4 {
     width: 200px;
-    height: 40px;
+    height: 70px;
     line-height: 42px;
     padding: 0;
     position: relative;
     z-index: 1;
     border: none;
+    margin-top: 20px;
 }
 
 .btn-4:before,
@@ -467,12 +476,12 @@ div.social-list ul li {
 
 .btn-4:before {
     height: 50%;
-    width: 2px;
+    width: 3px;
 }
 
 .btn-4:after {
     width: 20%;
-    height: 2px;
+    height: 3px;
 }
 
 .btn-4:hover:before {
@@ -494,13 +503,13 @@ div.social-list ul li {
 }
 
 .btn-4 span:before {
-    width: 2px;
+    width: 3px;
     height: 50%;
 }
 
 .btn-4 span:after {
     width: 20%;
-    height: 2px;
+    height: 3px;
 }
 
 .btn-4 span:hover:before {
@@ -520,11 +529,6 @@ div.social-list ul li {
 
 @media all and (max-width: 400px) {
     button.custom-btn.btn-4 {
-        /* font-size: 23px;
-        height: 60px;
-        right: 0;
-        line-height: 62px;
-        margin-bottom: 200px; */
         height: 70px;
         margin-bottom: 0;
     }
