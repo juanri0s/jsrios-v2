@@ -304,6 +304,10 @@ section.fullscreen {
     width: 100%;
 }
 
+section#contact.fullscreen.bg-alternate {
+    padding-bottom: 20px;
+}
+
 .max-height {
     min-height: 100vh;
 }
