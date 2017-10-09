@@ -439,6 +439,12 @@ div.social-list ul li {
     vertical-align: middle;
 }
 
+#ups_intern {
+    display: table;
+    position: relative;
+    vertical-align: middle;
+}
+
 #research {
     display: table;
     position: relative;
